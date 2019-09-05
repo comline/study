@@ -1,4 +1,4 @@
-package cn.com.comline.study.spring.framework.beans;
+package cn.com.comline.study.spring.framework.core;
 
 /**
  * 单例工厂的顶层设计
@@ -10,5 +10,8 @@ public interface CBeanFactory {
      * @param beanName
      * @return
      */
-    Object getBean(String beanName);
+    Object getBean(String beanName) throws Exception;
+
+
+    Object getBean(Class<?> beanClass) throws Exception;
 }
